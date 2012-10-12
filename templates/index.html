@@ -1,18 +1,78 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 id="title">The Life and Times of a Coding Assassin</h2>
+
+
+<!-- Header -->
+<header id="overview" class="jumbotron subhead background-snow">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1><span class="verite-brand">Coding<span class="verite-brand-ext">Assassin</span></span>
+          <p class="lead">The Life and Times of a Coding Assassin.</p>
+        </h1>
+      </div>
+    </div>
+  </div>
+</header>
 
 <!-- BEGIN Timeline Embed -->
 <div id="timeline-embed"></div>
 <script type="text/javascript">
-  var timeline_config = {
-   width: "100%",
-   height: "100%",
-   source: '../private/timeline.json'
-  }
+    var timeline_config = {
+        width:              '100%',
+        height:             '600',
+        source:             '/static/timeline.json'
+    }
 </script>
-<script type="text/javascript" src="../static/compiled/js/js-embed.js"></script>
+<script type="text/javascript" src="/static/compiled/js/storyjs-embed.js"></script>
 <!-- END Timeline Embed-->
+
+	<!-- Profile -->
+	<section id="profile">
+		<div class="container">
+			<h2>Profile</h2>
+			<br>
+			<div class="row">
+				
+				<!-- Column 1-->
+				<div class="span6">
+					<h4>Information</h4>
+					<table>
+						<tr>
+							<td>Birth Date</td>
+							<td><em>26 January 1995</em></td>
+						</tr>
+						<tr>
+							<td>Nationality</td>
+							<td><em>Indian</em></td>
+						</tr>
+						<tr>
+							<td>Human Languages</td>
+							<td><em>English, Hindi, Gujarati, French</em></td>
+						</tr>
+						<tr>
+							<td>Mobile Number</td>
+							<td><em>+91-9833841666</em></td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><em>codingassassin@gmail.com</em></td>
+						</tr>
+						<tr>
+							<td>School</td>
+							<td><em>Dhirubhai Ambani International School</em></td>
+						</tr>
+					</table>
+					</p>
+					<hr>
+					<!-- Short Introduction -->
+					<h4>Short Introduction</h4>
+					<p>I am a zealous developer of computer / web applications and electronic projects with an intense curiosity and a quest for ever increasing knowledge. I enjoy scouring the internet in search of new knowledge; from the basics of photoshop, to the complexities of OS design. I have taken a keen interest in programming since a young age and am proficient at several programming languages. I enjoy mentally challenging puzzles related to artificial intelligence and take delight in problem solving especially with the aid of technology e.g. the use Kalman filters over histogram filters with the openCV framework for a computer vision project.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
 
 {% endblock %}

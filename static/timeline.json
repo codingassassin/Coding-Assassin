@@ -1,0 +1,22 @@
+
+{
+    "timeline":
+    {
+        "headline":"Coding Assassin",
+        "type":"default",
+		"text":"The Life and Times of a Coding Assassin",
+		"startDate":"1995,1,26",
+        "date": [
+            {
+                "startDate":"1995,1,26",
+                "headline":"Genesis",
+                "text":"<p>The faithful day I was born.</p>",
+                "asset":
+                {
+                    "media":"http://dev.mytechnologypros.com/MyTechnologyPros.com/wp-content/uploads/2010/05/baby.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            }]
+    }
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Bold'), local('Merriweather-Bold'), url(http://themes.googleusercontent.com/static/fonts/merriweather/v4/ZvcMqxEwPfh2qDWBPxn6nhAPw1J91axKNXP_-QX9CC8.woff) format('woff');
+}
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  src: local('News Cycle Regular'), local('NewsCycle-Regular'), url(http://themes.googleusercontent.com/static/fonts/newscycle/v9/9Xe8dq6pQDsPyVH2D3tMQr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://themes.googleusercontent.com/static/fonts/newscycle/v9/G28Ny31cr5orMqEQy6ljt3bFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), url(http://themes.googleusercontent.com/static/fonts/merriweather/v4/RFda8w1V0eDZheqfcyQ4EKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Merriweather Light'), local('Merriweather-Light'), url(http://themes.googleusercontent.com/static/fonts/merriweather/v4/ZvcMqxEwPfh2qDWBPxn6nmB7wJ9CoPCp9n30ZBThZ1I.woff) format('woff');
+}

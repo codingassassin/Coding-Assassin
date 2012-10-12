@@ -25,7 +25,6 @@ import json
 
 from google.appengine.ext import db
 
-
 SECRET="silenda"
 def make_salt():
 	 return ''.join(random.choice(string.letters) for x in xrange(5))
@@ -49,12 +48,7 @@ class User(db.Model):
 	username = db.StringProperty(required = True)
 	password = db.StringProperty(required = True)
 	email = db.StringProperty(required = False)
-
-class Post(db.Model):
-	subject = db.StringProperty(required = True)
-	post = db.TextProperty(required = True)
-	created = db.DateTimeProperty(auto_now_add = True)
-
+	
 class Handler(webapp2.RequestHandler):
 	def write(self, *a, **kw):
 		self.response.out.write(*a, **kw)
@@ -72,17 +66,17 @@ class MainPage(Handler):
 	
 class BlogPage(Handler):
 	def get(self):
-		posts = db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10")
-		self.render("frontblog.html", posts=posts)
+		self.render("index.html")
 		
 class JsonBlogPage(Handler):
 	def get(self):
-		self.response.headers['Content-Type'] = "application/json"
-		posts = db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10")
-		lstr = []
-		for p in posts:
-			lstr.append(convertToJson(p))
-		self.write(json.dumps(lstr))
+		pass
+		# self.response.headers['Content-Type'] = "application/json"
+		# posts = db.GqlQuery("SELECT * FROM Post ORDER BY created DESC LIMIT 10")
+		# lstr = []
+		# for p in posts:
+		# 	lstr.append(convertToJson(p))
+		# self.write(json.dumps(lstr))
 
 class LoginPage(Handler):
 	def renderPage(self, username='', password='', error=''):
